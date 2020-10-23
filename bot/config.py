@@ -10,12 +10,12 @@ class config:
 
 class BotCommands:
   Download = ['download', 'dl']
-  Authorize = ['auth', 'authorize', 'login']
+  Authorize = ['auth', 'authorize', 'link']
   SetFolder = ['setfolder', 'setfl']
-  Revoke = ['revoke', 'logout']
+  Revoke = ['revoke', 'unlink']
   Clone = ['copy', 'clone']
   Delete = ['delete', 'del']
-  EmptyTrash = ['emptyTrash']
+  EmptyTrash = ['emptyTrash', 'clearbin']
   Ytdl = ['ytdl']
 
 class Messages:
@@ -65,7 +65,7 @@ class Messages:
     
     INVALID_AUTH_CODE = '❗ **Invalid Code**\n__The code you have sent is invalid or already used before. Generate new one by the Authorization URL__'
     
-    AUTH_TEXT = "⛓️ **To Authorize your Google Drive account visit this [URL]({}) and send the generated code here.**\n__Visit the URL > Allow permissions > you will get a code > copy it > Send it here__"
+    AUTH_TEXT = "**To Link your Google Drive account visit this [URL]({}) and send the generated code here.**\n\n**Process** : Visit the URL > Allow permissions > you will get a code > copy it > Paste & send it here"
     
     DOWNLOAD_TG_FILE = "📥 **Downloading File...**\n**Filename:** ```{}```\n**Size:** ```{}```\n**MimeType:** ```{}```"
     
