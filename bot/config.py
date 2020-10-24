@@ -33,7 +33,7 @@ class Messages:
         
         f"**Delete Google Drive Files**\nSend /{BotCommands.Delete[1]} [File/Folder URL] to delete it.\n\n**Clear Google Drive Bin**\nSend /{BotCommands.EmptyTrash[1]} to clear it.\n**Note**: Files are deleted permanently. This process cannot be undone.\n\n**Copy Google Drive Files/Folders**\nSend /{BotCommands.Clone[0]} (File ID / Folder ID or URL) to copy Google Drive Files in your Google Drive Account.",
         
-        "**⬇️ Please follow this Rules ⬇️**\n1. Don't copy BIG Google Drive Files/Folders. It may hang the bot and your files maybe damaged.\n\n2. Send One request at a time unless bot will stop all processes.\n\n3. Don't send slow links @transload it first.\n\n4. Don't misuse, overload or abuse this free service.",
+        f"**Commands Description**\n/auth - **Start Authorization process**\n/revoke - **Remove your G-Drive account**\n/setfolder [G-Drive link] - **Set custom folder for uploading**\n/clone - [G-Drive link] - **Copy files directly to your G-Drive**\n/delete [G-Drive link] - **Deletes the File/Folder**\n/clearbin - **Clear your Trash Bin**",
         
         # Dont remove this ↓ if you respect developer.
         "**Hosted & Maintained By @Neil_Projects**"
@@ -51,9 +51,9 @@ class Messages:
     
     DOWNLOADED_SUCCESSFULLY = "📤 **Uploading File**\n**Filename:** ```{}```\n**Filesize:** ```{}```"
     
-    UPLOADED_SUCCESSFULLY = "✅ **Uploaded Successfully.**\nFilename: [{}]({})\nFilesize: ({})"
+    UPLOADED_SUCCESSFULLY = "✅ **Uploaded Successfully.**\nFilename: [{}]({}) \nFilesize: ({})"
     
-    DOWNLOAD_ERROR = "⛔**Downloader Failed**\n{}\nLink - {}"
+    DOWNLOAD_ERROR = "⛔ **Downloader Failed**\n{}\nLink - {}"
     
     DOWNLOADING = "📥 **Downloading File\nLink:** ```{}```"
     
@@ -71,7 +71,7 @@ class Messages:
     
     PARENT_SET_SUCCESS = '✅ **Custom Folder set successfully.**\nCustom Folder ID - ```{}```\n\nSend ```/setfolder clear``` to clear it.'
     
-    PARENT_CLEAR_SUCCESS = f'🚮 **Custom Folder ID Cleared Successfuly.**\n\nSend **/{BotCommands.SetFolder[0]} [Folder Link]** to set it back.'
+    PARENT_CLEAR_SUCCESS = f'🚮 **Custom Folder Cleared Successfuly.**\n\nSend **/{BotCommands.SetFolder[0]} [Folder Link]** to set it back.'
     
     CURRENT_PARENT = "📁 **Current Custom Folder ID** - ```{}```\n\n Send **/{} [Folder link]** to change it."
     
