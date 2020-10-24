@@ -49,13 +49,13 @@ class Messages:
     
     NOT_AUTH = f"🔑 **You have not authenticated me to upload to any account.**\nSend /{BotCommands.Authorize[0]} command to authenticate."
     
-    DOWNLOADED_SUCCESSFULLY = "📤 **Uploading File...**\n**Filename:** ```{}```\n**\nFilesize:** ```{}```"
+    DOWNLOADED_SUCCESSFULLY = "📤 **Uploading File**\n**Filename:** ```{}```\n**Filesize:** ```{}```"
     
     UPLOADED_SUCCESSFULLY = "✅ **Uploaded Successfully.**\nFilename: [{}]({})\nFilesize: ({})"
     
     DOWNLOAD_ERROR = "⛔**Downloader Failed**\n{}\nLink - {}"
     
-    DOWNLOADING = "📥 **Downloading File...\nLink:** ```{}```"
+    DOWNLOADING = "📥 **Downloading File\nLink:** ```{}```"
     
     ALREADY_AUTH = "🔒 **Google Drive Account already authorized.**\nSend /revoke command to remove your Google Drive account."
     
@@ -67,13 +67,13 @@ class Messages:
     
     AUTH_TEXT = "**To Authorize your Google Drive account visit this [LINK]({}) and send the generated code here.**\n\n**Process** : Visit the Link > Allow permissions > you will get a code > copy the code > Paste & send it here"
     
-    DOWNLOAD_TG_FILE = "📥 **Downloading File...**\n**Filename:** ```{}```\n**Filesize:** ```{}```\n**MimeType:** ```{}```"
+    DOWNLOAD_TG_FILE = "📥 **Downloading File**\n**Filename:** ```{}```\n**Filesize:** ```{}```\n**MimeType:** ```{}```"
     
-    PARENT_SET_SUCCESS = '✅ **Custom Folder set successfully.**\nCustom Folder ID - ```{}```\nSend **/customfolder clear** to clear it.'
+    PARENT_SET_SUCCESS = '✅ **Custom Folder set successfully.**\nCustom Folder ID - ```{}```\n\nSend ```/setfolder clear``` to clear it.'
     
-    PARENT_CLEAR_SUCCESS = f'🚮 **Custom Folder ID Cleared Successfuly.**\n__Use__ ```/{BotCommands.SetFolder[0]} (Folder Link)``` __to set it back__.'
+    PARENT_CLEAR_SUCCESS = f'🚮 **Custom Folder ID Cleared Successfuly.**\n\nSend ```/{BotCommands.SetFolder[0]} (Folder Link)``` to set it back.'
     
-    CURRENT_PARENT = "🆔 **Your Current Custom Folder ID - {}**\n__Use__ ```/{} (Folder link)``` __to change it.__"
+    CURRENT_PARENT = "📁 **Current Custom Folder ID** - ```{}```\n\n Send ```/{} (Folder link)``` to change it."
     
     REVOKED = f"🔓 **Google Drive Account Revoked Successfully.**\nSend /{BotCommands.Authorize[0]} command to authenticate again."
     
