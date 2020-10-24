@@ -45,13 +45,13 @@ class Messages:
     
     INVALID_GDRIVE_URL = "⚠️ **Invalid Google Drive URL**\nMake sure the Google Drive URL is in valid format."
     
-    COPIED_SUCCESSFULLY = "📄 **Copied successfully.**\nFilename: [{}]({})/nFilesize: ({})"
+    COPIED_SUCCESSFULLY = "📄 **Copied successfully.**\nFilename: [{}]({})\nFilesize: ({})"
     
     NOT_AUTH = f"🔑 **You have not authenticated me to upload to any account.**\nSend /{BotCommands.Authorize[0]} command to authenticate."
     
     DOWNLOADED_SUCCESSFULLY = "📤 **Uploading File**\n**Filename:** ```{}```\n**Filesize:** ```{}```"
     
-    UPLOADED_SUCCESSFULLY = "✅ **Uploaded Successfully.**\nFilename: [{}]({}) \nFilesize: ({})"
+    UPLOADED_SUCCESSFULLY = "✅ **Uploaded Successfully.**\nFilename: [{}]({})\nFilesize: ({})"
     
     DOWNLOAD_ERROR = "⛔ **Downloader Failed**\n{}\nLink - {}"
     
@@ -79,13 +79,13 @@ class Messages:
     
     NOT_FOLDER_LINK = "⚠️ **Invalid folder link.**\nThe link you send its not belong to a folder."
     
-    CLONING = "🗂️ **Cloning into Google Drive...**\nG-Drive Link - {}"
+    CLONING = "🗂️ **Cloning into Google Drive**\nG-Drive Link - {}"
     
     PROVIDE_GDRIVE_URL = "**⚠️ Provide a valid Google Drive URL along with commmand.**\nUsage - /{} [G-Drive Link]"
     
     INSUFFICIENT_PERMISSONS = "⚠️ **You have insufficient permissions for this file.**\nFile ID - ```{}```"
     
-    DELETED_SUCCESSFULLY = "🗑️ **File Deleted Successfully.**\nFile deleted permanently!\nFile ID - ```{}```"
+    DELETED_SUCCESSFULLY = "🗑️ **File Deleted Successfully.**\n\n**File ID** - ```{}```"
     
     WENT_WRONG = "🛑 **ERROR: SOMETHING WENT WRONG**\nPlease try again later."
     
