@@ -23,15 +23,15 @@ class Messages:
 
     HELP_MSG = [
         ".",
-        "**G-Drive Uploader**\nI can upload files from direct link or Telegram Files to your Google Drive. All i need is to authenticate me to your Google Drive Account and send a direct download link or Telegram File.\n\nI have many more features too... ! Wanna know about it ? Just walkthrough this tutorial and read the messages carefully.",
+        "**G-Drive Uploader**\nI can upload files from direct link or Telegram Files to your Google Drive. All i need is to authenticate me to your Google Drive Account and send a direct download link or Telegram File.\n\nI have many more features too... Just click the arrows below to learn about it.",
         
-        f"**Authenticating Google Drive**\nSend the /{BotCommands.Authorize[0]} commmand and follow the instructions. Use /{BotCommands.Revoke[0]} to revoke your Google Drive Account.",
+        f"**Authenticating Google Drive**\nSend the /{BotCommands.Authorize[0]} and follow the instructions.\nUse /{BotCommands.Revoke[0]} to revoke your Google Drive Account.",
         
-        f"**Direct Links**\nSend me a direct download link for a file and I will download it on my server and Upload it to your Google Drive Account. You can rename files before uploading to G-Drive Account. Just send me the URL and new filename separated by ' | '.\n\n**Format:**```https://example.com/AFileWithDirectDownloadLink.mkv | New FileName.mkv```.\n\n**Telegram Files**\nTo Upload telegram files in your Google drive Account just send me the file and I will download and upload it to your Google Drive Account.\n**Note:** Telegram Files Downloading is slow. it may take longer time for big files.",
+        f"**Direct Links**\nSend me a direct download link for a file and I will download it on my server and Upload it to your Google Drive Account. You can rename files before uploading to G-Drive Account. Just send me the URL and new filename separated by ' | '.\n**Format:** ```https://example.com/AFileWithDirectDownloadLink.mkv | New FileName.mkv```.\n\n**Telegram Files**\nTo Upload telegram files in your Google drive Account just send me the file and I will download and upload it to your Google Drive Account.\n**Note:** Telegram Files Downloading is slow. it may take longer time for big files.",
         
-        f"**Custom Folder for Upload**\nWant to upload in custom folder or in **TeamDrive** ?\nUse /{BotCommands.SetFolder[0]} (Folder URL) to set custom upload folder. All the files are uploaded in the custom folder you provide.",
+        f"**Custom Folder for Upload**\nWant to upload in custom folder or in **TeamDrive** ?\nUse /{BotCommands.SetFolder[0]} [Folder URL] to set custom upload folder. All the files are uploaded in the custom folder you provide.",
         
-        f"**Delete Google Drive Files**\nSend /{BotCommands.Delete[1]} (File/Folder URL) to delete it.\n\n**Clear Google Drive Bin**\nSend /{BotCommands.EmptyTrash[1]} to clear it.\n**Note**: Files are deleted permanently. This process cannot be undone.\n\n**Copy Google Drive Files/Folders**\nSend /{BotCommands.Clone[0]} (File ID / Folder ID or URL) to copy Google Drive Files in your Google Drive Account.",
+        f"**Delete Google Drive Files**\nSend /{BotCommands.Delete[1]} [File/Folder URL] to delete it.\n\n**Clear Google Drive Bin**\nSend /{BotCommands.EmptyTrash[1]} to clear it.\n**Note**: Files are deleted permanently. This process cannot be undone.\n\n**Copy Google Drive Files/Folders**\nSend /{BotCommands.Clone[0]} (File ID / Folder ID or URL) to copy Google Drive Files in your Google Drive Account.",
         
         "**⬇️ Please follow this Rules ⬇️**\n1. Don't copy BIG Google Drive Files/Folders. It may hang the bot and your files maybe damaged.\n\n2. Send One request at a time unless bot will stop all processes.\n\n3. Don't send slow links @transload it first.\n\n4. Don't misuse, overload or abuse this free service.",
         
@@ -45,7 +45,7 @@ class Messages:
     
     INVALID_GDRIVE_URL = "⚠️ **Invalid Google Drive URL**\nMake sure the Google Drive URL is in valid format."
     
-    COPIED_SUCCESSFULLY = "✅ **Copied successfully.**\nFilename: [{}]({})/nFilesize: ({})"
+    COPIED_SUCCESSFULLY = "📄 **Copied successfully.**\nFilename: [{}]({})/nFilesize: ({})"
     
     NOT_AUTH = f"🔑 **You have not authenticated me to upload to any account.**\nSend /{BotCommands.Authorize[0]} command to authenticate."
     
@@ -57,7 +57,7 @@ class Messages:
     
     DOWNLOADING = "📥 **Downloading File\nLink:** ```{}```"
     
-    ALREADY_AUTH = "🔒 **Google Drive Account already authorized.**\nSend /revoke command to remove your Google Drive account."
+    ALREADY_AUTH = "🔒 **Google Drive Account already authorized.**\nSend /revoke to remove your Google Drive account."
     
     FLOW_IS_NONE = f"⚠️ **Invalid Code**\nRun {BotCommands.Authorize[0]} first."
     
@@ -71,17 +71,17 @@ class Messages:
     
     PARENT_SET_SUCCESS = '✅ **Custom Folder set successfully.**\nCustom Folder ID - ```{}```\n\nSend ```/setfolder clear``` to clear it.'
     
-    PARENT_CLEAR_SUCCESS = f'🚮 **Custom Folder ID Cleared Successfuly.**\n\nSend ```/{BotCommands.SetFolder[0]} (Folder Link)``` to set it back.'
+    PARENT_CLEAR_SUCCESS = f'🚮 **Custom Folder ID Cleared Successfuly.**\n\nSend **/{BotCommands.SetFolder[0]} [Folder Link]** to set it back.'
     
-    CURRENT_PARENT = "📁 **Current Custom Folder ID** - ```{}```\n\n Send ```/{} (Folder link)``` to change it."
+    CURRENT_PARENT = "📁 **Current Custom Folder ID** - ```{}```\n\n Send **/{} [Folder link]** to change it."
     
-    REVOKED = f"🔓 **Google Drive Account Revoked Successfully.**\nSend /{BotCommands.Authorize[0]} command to authenticate again."
+    REVOKED = f"🔓 **Google Drive Account Revoked Successfully.**\nSend /{BotCommands.Authorize[0]} to authenticate again."
     
     NOT_FOLDER_LINK = "⚠️ **Invalid folder link.**\nThe link you send its not belong to a folder."
     
     CLONING = "🗂️ **Cloning into Google Drive...**\nG-Drive Link - {}"
     
-    PROVIDE_GDRIVE_URL = "**⚠️ Provide a valid Google Drive URL along with commmand.**\nUsage - /{} (G-Drive Link)"
+    PROVIDE_GDRIVE_URL = "**⚠️ Provide a valid Google Drive URL along with commmand.**\nUsage - /{} [G-Drive Link]"
     
     INSUFFICIENT_PERMISSONS = "⚠️ **You have insufficient permissions for this file.**\nFile ID - ```{}```"
     
